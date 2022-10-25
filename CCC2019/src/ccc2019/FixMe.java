@@ -48,7 +48,7 @@ public class FixMe {
 					// else
 					else {
 						// print current count + " " + previousChar
-						output += currentCount + " " + previousChar;
+						output += currentCount + " " + previousChar+" ";
 						// currentCount = 1
 						currentCount = 1;
 					}
@@ -56,13 +56,13 @@ public class FixMe {
 				// If we're on the last character
 				if (j == input.length() - 1) {
 					// add the count to the output
-					output += currentCount;
+					output += currentCount + " " +currentChar+" ";
 				}
 
 			}
-		}
 		// Print newline
 		output += "\n";
+		}
 		// Print the result
 		System.out.println(output);
 		in.close();
